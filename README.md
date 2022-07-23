@@ -8,7 +8,7 @@ A RESTful web service developed with Spring Boot that mimics a rudimentary billi
 - Lombok
 
 ### Database Diagram
---- add img
+<img src="https://github.com/egeoz/bootcamp-final/blob/main/images/DatabaseDiagram.png?raw=true">
 
 ### API Examples
 ##### Adding a New Customer
