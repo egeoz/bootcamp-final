@@ -25,7 +25,7 @@ localhost:8080/v1/customers
 }
 ```
 
-**Ouput:**
+Output:
 ```
 Customer 1 has been created successfully.
 ```
@@ -289,7 +289,7 @@ METHOD: DELETE
 localhost:8080/v1/customers/{customerid}/{invoiceid}/delete
 ```
 
-**Ouput:**
+Output:
 ```
 Invoice 1 has been deleted successfully.
 ```
