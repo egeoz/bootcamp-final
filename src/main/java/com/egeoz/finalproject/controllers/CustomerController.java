@@ -51,6 +51,11 @@ public class CustomerController {
         return customerService.addPayment(customerid, invoiceid).getBody();
     }
 
+    @DeleteMapping("/{customerid}/{invoiceid}/delete")
+    public String deleteInvoice(@PathVariable("customerid") Long customerid, @PathVariable("invoiceid") Long invoiceid) {
+        return customerService.removeInvoice(customerid, invoiceid).getBody();
+    }
+
     @DeleteMapping("/{customerid}")
     public String remove(@PathVariable("customerid") Long customerid) {
         return customerService.remove(customerid).getBody();

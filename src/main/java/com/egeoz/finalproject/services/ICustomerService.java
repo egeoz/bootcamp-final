@@ -19,6 +19,8 @@ public interface ICustomerService {
 
     ResponseEntity<String> addInvoice(Invoice i, Long customerid);
 
+    ResponseEntity<String> removeInvoice(Long customerid, Long invoiceid);
+
     ResponseEntity<String> addPayment(Long customerid, Long invoiceid);
 
     ResponseEntity<String> remove(Long customerid);

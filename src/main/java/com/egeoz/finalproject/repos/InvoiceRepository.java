@@ -21,7 +21,7 @@ public interface InvoiceRepository extends JpaRepository<Invoice, Long> {
     List<Invoice> findByInvoiceStatus(@Param("isPaid") boolean isPaid);
 
     // Find a specific invoice with invoice and customer identifiers.
-    @Query(value = "SELECT i.customerid, i.invoiceid, i.invoice_amount, i.invoice_date, i.is_paid FROM customers c, invoice i WHERE c.customerid = :customerID AND i.invoiceid = :invoiceID", nativeQuery = true)
+    @Query(value = "SELECT i.customerid, i.invoiceid, i.invoice_amount, i.invoice_date, i.is_paid FROM customers c, invoice i WHERE c.customerid = i.customerid AND c.customerid = :customerID AND i.invoiceid = :invoiceID", nativeQuery = true)
     Invoice findByIDandCustomer(@Param("customerID") long customerID, @Param("invoiceID") long invoiceID);
 
     // Update invoice status by checking for invoice and customer identifiers.
