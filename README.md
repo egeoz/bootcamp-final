@@ -276,7 +276,7 @@ localhost:8080/v1/customers/{customerid}/addinvoice
 }
 ```
 
-**Ouput:**
+Output:
 ```
 Invoice 1 has been created successfully.
 ```
