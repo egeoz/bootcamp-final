@@ -37,7 +37,7 @@ METHOD: GET
 localhost:8080/v1/customers
 ```
 
-**Output:**
+Output:
 ```json
 [
     {
@@ -70,7 +70,7 @@ METHOD: GET
 localhost:8080/v1/customers/{customerid}
 ```
 
-**Output:**
+Output:
 ```json
 {
     "customerID": 1,
@@ -86,7 +86,7 @@ METHOD: GET
 localhost:8080/v1/customers/{customerid}/details
 ```
 
-**Output:**
+Output:
 ```
 Customer ID: 2
 Customer Name: Saul Tigh
@@ -125,7 +125,7 @@ localhost:8080/v1/customers/{customerid}
 }
 ```
 
-**Output:**
+Output:
 ```
 Customer 2 has been updated successfully:
 Customer ID: 2
@@ -139,7 +139,7 @@ METHOD: DELETE
 localhost:8080/v1/customers/{customerid}
 ```
 
-**Output:**
+Output:
 ```
 Customer 1 has been deleted successfully.
 ```
@@ -153,7 +153,7 @@ METHOD: GET
 localhost:8080/v1/invoice
 ```
 
-**Output:**
+Output:
 ```json
 [
   {
@@ -222,7 +222,7 @@ METHOD: GET
 localhost:8080/v1/invoice/{invoiceid}
 ```
 
-**Output:**
+Output:
 ```json
 {
   "invoiceID": 1,
@@ -245,7 +245,7 @@ METHOD: GET
 localhost:8080/v1/invoice/status/{ispaid}
 ```
 
-**Output:**
+Output:
 ```json
 [
   {
@@ -302,7 +302,7 @@ METHOD: GET
 localhost:8080/v1/payment
 ```
 
-**Output:**
+Output:
 ```json
 [
     {
@@ -336,7 +336,7 @@ METHOD: GET
 localhost:8080/v1/payment/{paymentid}
 ```
 
-**Output:**
+Output:
 ```json
 {
   "paymentID": 1,
@@ -358,7 +358,7 @@ METHOD: POST
 localhost:8080/v1/customers/{customerid}/{invoiceid}/pay
 ```
 
-**Output:**
+Output:
 ```
 Amount 3500.00 is added to payment. Total amount is now: 3500.00
 ```
