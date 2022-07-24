@@ -12,7 +12,7 @@ A RESTful web service developed with Spring Boot that mimics a rudimentary billi
 
 ## API Documentation
 ### Customer Operations
-##### Add a new customer
+##### Add new customer
 ```
 METHOD: POST 
 localhost:8080/v1/customers
